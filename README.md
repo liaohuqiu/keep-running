@@ -27,4 +27,4 @@ The log file will be: `test-program.sh.log` in the same directory with `test-pro
 
 Tips: The file used to lock is `test-program.sh.lock`.
 
-
+Enjoy coding!
