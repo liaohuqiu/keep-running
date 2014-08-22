@@ -57,7 +57,7 @@ signal.signal(signal.SIGPIPE, sig_handler)
 
 while True:
     msg("Pid: %s, try running " % current_pid + " ".join(prog_argv))
-    sp = subprocess.Popen(prog_argv, cwd=prog_dir, close_fds=True, stdout=logfp, stderr=subprocess.STDOUT)
+    sp = subprocess.Popen(prog_argv, cwd=prog_dir, close_fds=True, stdout=logfp, stderr=subprocess.STDOUT, env=os.environ.copy())
     child_pid = sp.pid
     msg('Child pid %s' % current_pid)
     sp.wait()
