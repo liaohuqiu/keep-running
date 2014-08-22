@@ -24,11 +24,11 @@ log_dir = prog_dir
 prog_argv = sys.argv[2:]
 prog_argv.insert(0, program)
 
-lockfilename = "%s/run-%s.lock" % (log_dir, prog_name)
+lockfilename = "%s/%s.run.lock" % (log_dir, prog_name)
 lockfd = os.open(lockfilename, os.O_WRONLY | os.O_CREAT, 0666)
 fcntl.flock(lockfd, fcntl.LOCK_EX | fcntl.LOCK_NB)
 
-logfilename = "%s/run-%s.log" % (log_dir, prog_name)
+logfilename = "%s/%s.run.log" % (log_dir, prog_name)
 logfp = open(logfilename, "a")
 
 def msg(msg):
