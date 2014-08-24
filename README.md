@@ -20,11 +20,15 @@ done
 ```
 
 ```bash
-keep-running test-program.sh
+$ keep-running test-program.sh
 ```
 
-The log file will be: `test-program.sh.log` in the same directory with `test-program.sh`.
+*   log file
 
-Tips: The file used to lock is `test-program.sh.lock`.
+    The log file will be: `test-program.sh.log` in the same directory with `test-program.sh`.
+
+*   lock file
+
+    The file used to lock is `test-program.sh.lock`.
 
 Enjoy coding!
