@@ -1,5 +1,8 @@
 ##keep running
+
 Kepp a script or bash cmd running. Relaunch the command or script when exit.
+
+https://pypi.python.org/pypi/keep-running
 
 ##installation
 ```bash
