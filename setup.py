@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'keep-running',
-    version = '0.0.6',
+    version = '1.0.0',
     keywords = ('keep running'),
     description = 'Keep a script or bash cmd running. Relaunch the command or script when exit.',
     license = 'MIT License',
